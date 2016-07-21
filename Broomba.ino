@@ -19,9 +19,22 @@
 #define lightSensor2 15
 
 //global variables
+unsigned int usTimeout = 5000;
 
 void setup() {
   Serial.begin(9600);
+  pinMode(servoPin, OUTPUT);
+  pinMode(echo1, INPUT);
+  pinMode(trigger1, OUTPUT);
+  pinMode(motor1Pin1, OUTPUT);
+  pinMode(echo2, INPUT);
+  pinMode(trigger2, OUTPUT);
+  pinMode(motor1Pin2, OUTPUT);
+  pinMode(motor2Pin1, OUTPUT);
+  pinMode(motor2Pin2, OUTPUT);
+  pinMode(lightSensor1, INPUT);
+  pinMode(lightSensor2, INPUT);
+
 }
 
 void loop() {
