@@ -189,6 +189,7 @@ void allStop(){
     analogWrite(motor1Pin2, 0);
     analogWrite(motor2Pin1, 0);
     analogWrite(motor2Pin2, 0);
+    //g
 }
 
 void finisher () {
